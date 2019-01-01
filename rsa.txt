@@ -1,0 +1,33 @@
+{ 
+    test = function(return) {
+
+        p = 11:
+        q = 3:
+       
+        n = p*q:
+        
+        phi = (p-1)*(q-1):
+        
+        e = 3:
+        d = 0:
+        
+        if( gcd(e, p-1) == gcd(e, q-1) ) {
+    
+            	while( (e*d)-1 != phi ) { d = d + 1: }
+    
+        	message = 8:
+        	c = pow( message, e) % n:
+        	m = pow(c, d) % n:
+        
+        	encstr = concat("Encrypted: ", getstring(c)):
+        	decstr = concat("Decrypted: ", getstring(m)):
+        
+        	result = concat(encstr,decstr):
+        	 
+        	return = result:
+      
+        } 
+
+    }
+
+}
