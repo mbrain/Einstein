@@ -15,7 +15,7 @@
     
             	while( (e*d)-1 != phi ) { d = d + 1: }
     
-        	message = 8:
+        	message = getusernum("Gimme a number to encrypt"):
         	c = pow( message, e) % n:
         	m = pow(c, d) % n:
         
